@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5C57551818976BB6EA5A1DECD6338E4A19A21107",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5C57551818976BB6EA5A1DECD6338E4A19A21107" : 9223372036854775807,
+    "C35BA87E81D9BAFC1636E0822328C01C7FFA32B7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E25EF8FC-40AE-4CC7-A176-F5610F73BD03",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5C57551818976BB6EA5A1DECD6338E4A19A21107" : "iOS-Student-Weather-master\/",
+    "C35BA87E81D9BAFC1636E0822328C01C7FFA32B7" : "iOS-Student-Weather"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Weather",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Weather.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:nekomeo\/iOS-WeatherApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5C57551818976BB6EA5A1DECD6338E4A19A21107"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lighthouse-labs\/iOS-Student-Weather.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C35BA87E81D9BAFC1636E0822328C01C7FFA32B7"
+    }
+  ]
+}

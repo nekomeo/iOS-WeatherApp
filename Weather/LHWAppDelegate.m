@@ -7,6 +7,7 @@
 //
 
 #import "LHWAppDelegate.h"
+#import "City.h"
 
 @implementation LHWAppDelegate
 
@@ -16,6 +17,11 @@
     
     // Your code goes here
     // Don't forget to assign the window a rootViewController
+    City *vancouver = [[City alloc] initWithName:@"Vancouver" andTemperature:21 andDescription:@"Overcast"];
+    
+    // Create a Tab Bar Controller
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    
     
     [self.window makeKeyAndVisible];
     return YES;
