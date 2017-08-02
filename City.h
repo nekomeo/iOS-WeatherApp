@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface City : NSObject
+@property (nonatomic, strong) NSString *name;
 
 - (instancetype)initWithName:(NSString *)name andTemperature:(NSInteger)temperature andDescription:(NSString *)weatherDescription;
 

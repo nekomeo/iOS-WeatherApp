@@ -22,6 +22,7 @@
 		60ADD9701989CFDB0086A6BC /* WeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ADD96F1989CFDB0086A6BC /* WeatherTests.m */; };
 		6ADC5C9D1F324CB500D4FE2F /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADC5C9C1F324CB500D4FE2F /* City.m */; };
 		6ADC5CA01F3253FF00D4FE2F /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADC5C9F1F3253FF00D4FE2F /* CityViewController.m */; };
+		6ADC5CA31F32913500D4FE2F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADC5CA21F32913500D4FE2F /* DetailViewController.m */; };
 		AF207A5319F472D300FD95BF /* clear-day.png in Resources */ = {isa = PBXBuildFile; fileRef = AF207A4619F472D300FD95BF /* clear-day.png */; };
 		AF207A5419F472D300FD95BF /* clear-night.png in Resources */ = {isa = PBXBuildFile; fileRef = AF207A4719F472D300FD95BF /* clear-night.png */; };
 		AF207A5519F472D300FD95BF /* cloudy-night.png in Resources */ = {isa = PBXBuildFile; fileRef = AF207A4819F472D300FD95BF /* cloudy-night.png */; };
@@ -69,6 +70,8 @@
 		6ADC5C9C1F324CB500D4FE2F /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = City.m; path = ../City.m; sourceTree = "<group>"; };
 		6ADC5C9E1F3253FF00D4FE2F /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
 		6ADC5C9F1F3253FF00D4FE2F /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
+		6ADC5CA11F32913500D4FE2F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		6ADC5CA21F32913500D4FE2F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		AF207A4619F472D300FD95BF /* clear-day.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear-day.png"; sourceTree = "<group>"; };
 		AF207A4719F472D300FD95BF /* clear-night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear-night.png"; sourceTree = "<group>"; };
 		AF207A4819F472D300FD95BF /* cloudy-night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudy-night.png"; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 				6ADC5C9C1F324CB500D4FE2F /* City.m */,
 				6ADC5C9E1F3253FF00D4FE2F /* CityViewController.h */,
 				6ADC5C9F1F3253FF00D4FE2F /* CityViewController.m */,
+				6ADC5CA11F32913500D4FE2F /* DetailViewController.h */,
+				6ADC5CA21F32913500D4FE2F /* DetailViewController.m */,
 				AF207A4519F472D300FD95BF /* images */,
 				60ADD95C1989CFDB0086A6BC /* Images.xcassets */,
 				60ADD9511989CFDB0086A6BC /* Supporting Files */,
@@ -314,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADC5CA31F32913500D4FE2F /* DetailViewController.m in Sources */,
 				60ADD95B1989CFDB0086A6BC /* LHWAppDelegate.m in Sources */,
 				60ADD9571989CFDB0086A6BC /* main.m in Sources */,
 				6ADC5C9D1F324CB500D4FE2F /* City.m in Sources */,

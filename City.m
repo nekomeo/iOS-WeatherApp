@@ -10,7 +10,6 @@
 
 @interface City()
 
-@property (nonatomic, strong) NSString *name;
 @property (nonatomic, assign) NSInteger temperature;
 @property (nonatomic, strong) NSString *weatherDescription;
 

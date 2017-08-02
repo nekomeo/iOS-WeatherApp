@@ -11,7 +11,7 @@
 @interface CityViewController ()
 
 @property (nonatomic, strong) UIView *cityView;
-
+@property (nonatomic, strong) UIButton *detailButton;
 
 @end
 
@@ -30,10 +30,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIView *cityView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
-    self.view = cityView;
-    self.view.backgroundColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
+    [self buttonDetails];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,5 +49,40 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)buttonDetails
+{
+    UIButton *detailButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [detailButton setTitle:self.city.name forState:UIControlStateNormal];
+    [detailButton addTarget:self action:@selector(detailViewController) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:detailButton];
+    detailButton.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    // Button Constraints
+    NSLayoutConstraint *buttonXConstraint = [NSLayoutConstraint constraintWithItem:detailButton
+                                                                      attribute:NSLayoutAttributeCenterX
+                                                                      relatedBy:NSLayoutRelationEqual
+                                                                         toItem:self.view
+                                                                      attribute:NSLayoutAttributeCenterX
+                                                                     multiplier:1.0
+                                                                       constant:0.0];
+    
+    NSLayoutConstraint *buttonYConstraint = [NSLayoutConstraint constraintWithItem:detailButton
+                                                                      attribute:NSLayoutAttributeCenterY
+                                                                      relatedBy:NSLayoutRelationEqual
+                                                                         toItem:self.view
+                                                                      attribute:NSLayoutAttributeCenterY
+                                                                     multiplier:1.0
+                                                                       constant:0.0];
+    
+    [NSLayoutConstraint activateConstraints:@[buttonXConstraint, buttonYConstraint]];
+    
+}
+
+
+- (void)detailViewController
+{
+    DetailViewController *detailVC = [[DetailViewController alloc] init];
+}
 
 @end
