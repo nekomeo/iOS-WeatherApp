@@ -10,7 +10,10 @@
 
 @interface City : NSObject
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, assign) NSInteger temperature;
+@property (nonatomic, strong) NSString *weatherDescription;
+@property (nonatomic, strong) UIImage *weatherImage;
 
-- (instancetype)initWithName:(NSString *)name andTemperature:(NSInteger)temperature andDescription:(NSString *)weatherDescription;
+- (instancetype)initWithName:(NSString *)name andTemperature:(NSInteger)temperature andDescription:(NSString *)weatherDescription andImage:(UIImage *)weatherImage;
 
 @end

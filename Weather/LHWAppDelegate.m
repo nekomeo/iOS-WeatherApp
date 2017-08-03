@@ -21,7 +21,7 @@
     
     // Your code goes here
     // Don't forget to assign the window a rootViewController
-    City *vancouver = [[City alloc] initWithName:@"Vancouver" andTemperature:21 andDescription:@"Overcast"];
+    City *vancouver = [[City alloc] initWithName:@"Vancouver" andTemperature:21 andDescription:@"Overcast" andImage:[UIImage imageNamed:@"partly-cloudy"]];
     
     // Create a Tab Bar Controller
     
