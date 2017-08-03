@@ -144,7 +144,23 @@
                                                                        multiplier:1.0
                                                                          constant:0.0];
     
-    [NSLayoutConstraint activateConstraints:@[imageXConstraint, imageYConstraint]];
+    NSLayoutConstraint *imageWidthConstraint = [NSLayoutConstraint constraintWithItem:weatherImage
+                                                                            attribute:NSLayoutAttributeWidth
+                                                                            relatedBy:NSLayoutRelationEqual
+                                                                               toItem:nil
+                                                                            attribute:NSLayoutAttributeNotAnAttribute
+                                                                           multiplier:1.0
+                                                                             constant:50.0];
+    
+    NSLayoutConstraint *imageHeightConstraint = [NSLayoutConstraint constraintWithItem:weatherImage
+                                                                             attribute:NSLayoutAttributeHeight
+                                                                             relatedBy:NSLayoutRelationEqual
+                                                                                toItem:nil
+                                                                             attribute:NSLayoutAttributeNotAnAttribute
+                                                                            multiplier:1.0
+                                                                              constant:50.0];
+    
+    [NSLayoutConstraint activateConstraints:@[imageXConstraint, imageYConstraint, imageWidthConstraint, imageHeightConstraint]];
 }
 
 @end
