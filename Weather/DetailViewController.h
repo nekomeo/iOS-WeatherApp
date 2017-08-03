@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CityViewController.h"
 
 @interface DetailViewController : UIViewController
+
+@property (nonatomic, weak) City *city;
+@property (nonatomic, strong) UILabel *cityLabel;
+
+- (instancetype)initWithCity:(City *)city;
 
 @end

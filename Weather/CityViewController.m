@@ -7,17 +7,15 @@
 //
 
 #import "CityViewController.h"
+#import "DetailViewController.h"
 
 @interface CityViewController ()
-
-@property (nonatomic, strong) UIView *cityView;
-@property (nonatomic, strong) UIButton *detailButton;
 
 @end
 
 @implementation CityViewController
 
-- (instancetype)initWithName:(City *)city
+- (instancetype)initWithCity:(City *)city
 {
     if (self = [super init])
     {
@@ -40,15 +38,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (void)buttonDetails
 {
@@ -82,7 +71,9 @@
 
 - (void)detailViewController
 {
-    DetailViewController *detailVC = [[DetailViewController alloc] init];
+    DetailViewController *detailVC = [[DetailViewController alloc] initWithCity:self.city];
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 @end
+

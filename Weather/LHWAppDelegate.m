@@ -25,7 +25,7 @@
     
     // Create a Tab Bar Controller
     
-    CityViewController *vancouverCVC = [[CityViewController alloc] initWithName:vancouver];
+    CityViewController *vancouverCVC = [[CityViewController alloc] initWithCity:vancouver];
     
     UINavigationController *vancouverVC = [[UINavigationController alloc] initWithRootViewController:vancouverCVC];
     vancouverVC.title = @"Vancouver";

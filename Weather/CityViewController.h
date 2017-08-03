@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "City.h"
-#import "DetailViewController.h"
 
 @interface CityViewController : UIViewController
 @property (nonatomic, strong) City *city;
 
-- (instancetype)initWithName:(City *)city;
+- (instancetype)initWithCity:(City *)city;
 
 @end
